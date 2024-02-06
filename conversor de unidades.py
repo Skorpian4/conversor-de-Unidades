@@ -1,9 +1,11 @@
 import os 
 import time
+
 y='s'
 
 def menu():
-    while y == 'n' or 'N':
+    global y
+    while y == 's' or y == 'S':
         e = int(input('Deseja converter temperaturas ou distâncias: \n [1]- Temperaturas \n [2]- Distancias'))
         if e == 1: 
             temp()
